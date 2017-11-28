@@ -1,6 +1,5 @@
-# `timeout-test-app`
 
-This project is an [AngularJS][angularjs] web appplication. 
+This project is an AngularJS web application. 
 
 
 ## Getting Started
@@ -9,10 +8,10 @@ To get you started you can simply clone the `timeout-test-app` repository and in
 
 ### Prerequisites
 
-You need git to clone the `timeout-test-app` repository. You can get git from [here][git].
+You need git to clone the `timeout-test-app` repository. You can get git from [here](https://git-scm.com/).
 
 We also use a number of Node.js tools to initialize and start `timeout-test-app`. You must have Node.js
-and its package manager (npm) installed. You can get them from [here][node].
+and its package manager (npm) installed. You can get them from [here](https://nodejs.org/en/).
 
 ### Clone `timeout-test-app`
 
@@ -27,8 +26,8 @@ git clone https://github.com/ldanilescu/timeout-test-app.git
 We have two kinds of dependencies in this project: tools and Angular framework code. The tools help
 us manage the application.
 
-* We get the tools we depend upon via `npm`, the [Node package manager][npm].
-* We get the Angular code via `bower`, a [client-side code package manager][bower].
+* We get the tools we depend upon via `npm`, the [Node package manager](https://www.npmjs.com/).
+* We get the Angular code via `bower`, a [client-side code package manager](https://bower.io/).
 
 `npm` is preconfigured to automatically run `bower` so you can simply do:
 
@@ -55,7 +54,7 @@ this server is:
 npm start
 ```
 
-Now browse to the app at [`localhost:8000`][local-app-url].
+Now browse to the app at `localhost:8000`.
 
 
 
