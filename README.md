@@ -4,22 +4,12 @@ This project is an AngularJS web application.
 
 ## Getting Started
 
-To get you started you can simply clone the `timeout-test-app` repository and install the dependencies :
+To get you started you can simply download the source code or clone the `timeout-test-app` repository and then install the dependencies :
 
 ### Prerequisites
 
-You need git to clone the `timeout-test-app` repository. You can get git from [here](https://git-scm.com/).
-
 We also use a number of Node.js tools to initialize and start `timeout-test-app`. You must have Node.js
 and its package manager (npm) installed. You can get them from [here](https://nodejs.org/en/).
-
-### Clone `timeout-test-app`
-
-Clone the `timeout-test-app` repository using git:
-
-```
-git clone https://github.com/ldanilescu/timeout-test-app.git
-```
 
 ### Install Dependencies
 
@@ -32,6 +22,7 @@ us manage the application.
 `npm` is preconfigured to automatically run `bower` so you can simply do:
 
 ```
+cd timeout-test-app
 npm install
 ```
 
