@@ -1,0 +1,28 @@
+/* app css stylesheet */
+.sf-title {
+    text-align: center;
+}
+
+.sf-padding-left30 {
+    padding-left: 30px;
+}
+
+.sf-padding-bottom10 {
+    padding-bottom: 10px;
+}
+
+.sf-color-blue {
+    color: rgba(63,81,181,0.87);
+}
+
+.sf-color-red {
+    color: #FF5252;
+}
+
+.sf-container-out {
+    margin: 40px;
+}
+
+.sf-paragraph {
+    font-weight: 500;
+}

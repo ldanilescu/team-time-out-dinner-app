@@ -1,0 +1,63 @@
+
+<div class="sf-container-out">
+    <h1 class="sf-title">Let's go out !!!</h1>
+    <p class="sf-paragraph">Select which team members will go out : </p>
+    <div layout="row" layout-wrap>
+        <div flex="100" layout="column">
+            <div flex-xs flex="50">
+                <md-checkbox aria-label="Select All"
+                             ng-checked="vm.isChecked()"
+                             md-indeterminate="vm.isIndeterminate()"
+                             ng-click="vm.toggleAll()"
+                             class="md-primary">
+                    <span ng-if="vm.isChecked()">Un-</span>Select All
+                </md-checkbox>
+            </div>
+            <div>
+                <div class="sf-padding-left30" flex="100" ng-repeat="item in vm.users">
+                    <md-checkbox aria-label="items"
+                                 ng-checked="vm.exists(item, vm.selected)"
+                                 ng-click="vm.toggle(item, vm.selected)"
+                                 class="md-primary">
+                        {{ item.name }}
+                    </md-checkbox>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        <md-button class="md-raised" ng-disabled="vm.selected.length==0" ng-click="vm.calculatePlacesToAvoid()" type="button">Find places</md-button>
+    </p>
+    <br>
+
+    <div layout="row" layout-wrap ng-if="vm.displayResults">
+        <div flex="50" layout="column">
+            <p class="sf-paragraph">Places to go : </p>
+            <div>
+                <div ng-if="item.toGo" class="sf-padding-left30 sf-padding-bottom10" flex="100" ng-repeat="item in vm.venues">
+                    <span class="sf-paragraph sf-color-blue">{{ item.name }}</span>
+                </div>
+            </div>
+        </div>
+        <div flex="50" layout="column">
+            <p class="sf-paragraph">Places to avoid : </p>
+            <div>
+                <div class="sf-padding-left30" flex="100" ng-repeat="item in vm.venues">
+                    <span class="sf-paragraph sf-color-red" ng-if="!item.toGo">{{ item.name }}</span>
+                    <div class="sf-select-all-checkboxes" flex="100" ng-repeat="reason in item.why_avoid">
+                        {{ reason }}
+                    </div>
+                    <br ng-if="!item.toGo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div layout="row" layout-wrap ng-if="!vm.displayResults">
+        <div flex="100" layout="column">
+            <p class="sf-paragraph">No results yet. </p>
+        </div>
+    </div>
+
+</div>
