@@ -15,8 +15,6 @@
             vm.users = [];
             vm.selected = [];
             vm.venues = [];
-            vm.placesToGo = [];
-            vm.placesToAvoid = [];
             vm.displayResults = false;
 
             /* ======================= View model functions =================== */
