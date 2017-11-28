@@ -36,8 +36,6 @@
                 $http.get('data/users.json').
                 then(function onSuccess(response) {
                     vm.users = response.data;
-                    console.log("Users : ");
-                    console.log(vm.users);
                 });
             }
 
@@ -49,8 +47,6 @@
                 $http.get('data/venues.json').
                 then(function onSuccess(response) {
                     vm.venues = response.data;
-                    console.log("Venues :");
-                    console.log(vm.venues);
                 });
             }
 
@@ -61,7 +57,6 @@
             function _calculatePlacesToAvoid() {
                 vm.venues.forEach(function(venue) {
                     var drinks = venue.drinks.map(function(value){ return value.toLowerCase() });
-                    console.log(drinks);
 
                     var food  = venue.food.map(function(value){ return value.toLowerCase() });
 
